@@ -10,6 +10,9 @@ tokenizer = AutoTokenizer.from_pretrained(checkpoint, model_max_length=MODEL_MAX
 
 books = load_dataset(DATASET_NAME)
 
+#TODO: Find vocab_size
+VOCAB_SIZZE = 63261
+
 books = books["train"].train_test_split(test_size=0.2)
 
 pre_trained_config = {
@@ -35,8 +38,8 @@ pre_trained_config = {
   "decoder_ffn_dim": 2048,
   "decoder_layerdrop": 0.0,
   "decoder_layers": 6 if TRANSFER_LEARNING else DECODER_LAYERS,
-  "decoder_start_token_id": 63260,
-  "decoder_vocab_size": 63261,
+  "decoder_start_token_id": VOCAB_SIZE - 1,
+  "decoder_vocab_size": VOCAB_SIZE,
   "dropout": 0.1,
   "encoder_attention_heads": 8 if TRANSFER_LEARNING else HEADS,
   "encoder_ffn_dim": 2048,
