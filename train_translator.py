@@ -11,7 +11,7 @@ tokenizer = AutoTokenizer.from_pretrained(checkpoint, model_max_length=MODEL_MAX
 books = load_dataset(DATASET_NAME)
 
 #TODO: Find vocab_size
-VOCAB_SIZZE = 63261
+VOCAB_SIZE = 63261
 
 books = books["train"].train_test_split(test_size=0.2)
 
