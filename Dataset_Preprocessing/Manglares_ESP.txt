@@ -1,0 +1,180 @@
+Las Manglares
+de
+Robert C. Thigpen nüma Aminta Peláez Guariyu & Alvaro Andrés Moreno Munar 
+
+Los materiales educativos bilingües fueron publicados por
+
+Conservación Marina sin Fronteras www.marinefrontiers.org
+
+© 2018 Robert C. Thigpen Todos los derechos reservados. Este libro o partes del mismo no pueden reproducirse de ninguna forma, almacenarse en ningún sistema de recuperación o transmitirse de ninguna forma por ningún medio (electrónico, mecánico, fotocopia, grabación u otro) sin el permiso previo por escrito del editor, salvo lo provisto por la ley de derechos de autor de los Estados Unidos de América.
+
+Para obtener permisos, póngase en contacto con: info@marinefrontiers.org
+
+Portada de Madison Heltzel
+
+ISBN-13: 978-1-7322840-3-6
+Clasificación: TXu 2-098-611
+
+Esta edición de nuestro libro de biología de la conservación de Ecosistemas de Manglares fue creada para nuestros amigos del Colectivo Wainpirai.
+
+Portada: Espátula Rosada (Platalea ajaja), Garza Cucharón (Cochlearius cochlearius), Gran Garceta (Ardea alba) y Garza Tigre Gorjinuda (Tigrisoma mexicanum) se pueden ver descansando, caminando y cazando peces que viven en los manglares. Ilustración: Madison Heltzel
+
+Prefacio
+Mi primera investigación en el área de pesquerías del Caribe se basó en gran medida trabajando lado a lado con los pescadores artesanales de el Caribe occidental Los pescadores me trataron más como a un pariente de una comunidad del interior del país, que como a un científico marino de Estados Unidos. El plantear mis preguntas sobre biología marina utilizando métodos de investigación de las ciencias sociales me proporcionó una perspectiva única a través de la cual pude aprender sobre y del conocimiento ancestral (herencia intelectual) de estos pescadores. Estas experiencias también me dieron una percepción sobre sus familias, los mecanismos locales de pesca e incluso los sistemas educativos locales, que no podría haber aprendido sin estar inmerso en su trabajo diario en el mar.
+
+Estos pescadores conocen los ecosistemas en los que viven y trabajan de manera íntima, precisamente de la misma manera en que uno está familiarizado con un amigo cercano y de confianza. Hoy en día, las pesquerías con las que estos pescadores están tan estrechamente relacionados se ven afectadas por factores externos como el cambio climático, la contaminación de fuentes puntuales, la sobreexplotación, los plásticos de un solo uso y la destrucción de hábitats de cría y hogar de especies juveniles, por nombrar solo algunos. A pesar que estos pescadores conocen bien estos ecosistemas, su herencia intelectual no responde completamente a estas nuevas presiones negativas externas, sus causas y la ciencia que las describe. Estos libros están diseñados para combinar el conocimiento local de los pescadores y sus idiomas locales con el lenguaje y los conceptos de la ciencia, de modo que estén mejor equipados para discutir estos temas en los idiomas que ellos usan. A su vez, los nuevos conceptos y palabras en el contexto de sus lenguas maternas les ayudarán a comunicar sus estrategias para proteger la seguridad alimentaria de sus familias y los ecosistemas marinos de los que dependen, de manera clara y concisa con los administradores pesqueros, autoridades y conservacionistas.
+
+Cuando te propones convertir construcciones científicas en lo que tradicionalmente han sido lenguajes orales, te puedes encontrar con muchos problemas. Uno de ellos es que algunos de los términos no tienen palabras equivalentes en el/los idioma(s) con los que estás trabajando. Para superar este problema, hemos inscrito en el proyecto traductores que poseen una relación cultural y lingüística con los diferentes idiomas, con el objetivo de crear palabras nuevas (neologismos). Lo han hecho utilizando metodologías estándar para la creación de neologismos. Confiamos en nuestro diseño y metodología, pero también estamos aprendiendo sobre la marcha. Continuaremos perfeccionando y estandarizando nuestros enfoques y procedimientos a medida que desarrollemos nuestros próximos libros: una publicación de ciencias de la conservación, Micro-plásticos en nuestro medio ambiente, y un diccionario bilingüe de términos científicos y descripciones de flora y fauna. La mayoría de las palabras nuevas que se encuentran en el libro actual de Ecología de Manglar están definidas en el glosario. Las que no están en el glosario de esta edición se incluirán en el diccionario bilingüe y se revisarán en una edición futura de este libro.
+
+Me gustaría agradecer a los pescadores y sus familias por aceptarme y permitirme entrar en sus vidas. Sin la educación que recibí de estas comunidades, este proyecto no hubiera sido posible. También quiero agradecer a nuestro equipo internacional de voluntarios, porque si no fuera por ellos hacer realidad estas ideas no sería posible.
+
+¡Juntos somos Conservación Marina sin Fronteras y ahora ustedes también!
+
+Robert Thigpen Director Ejecutivo
+Conservación Marina sin Fronteras
+
+INTRODUCCION
+
+Soy una mujer que jamás aprendió una letra del alfabeto, no existían otras lenguas en el entorno donde crecí, mis lecturas no eran más que el canto de las aves, las huellas de los animales en la arena, la revelación matutina de los sueños nocturnos. Ahora que he envejecido y que no sé escribir, solo puedo invitar a las nuevas generaciones que conversan a toda hora en un dispositivo inteligente, a sentarse frente al mar, en la orilla de un río a contemplar un viejo árbol, y puedan sentir que en cada uno de ellos hay vida, una vida que no debe morir por pretensiones humanas, en muchos casos inhumanas.
+
+Nuestros niños que han adoptado las formas de lectura y escritura de otros pensamientos (occidental) también se han desprendido poco y lentamente de ese conocimiento ancestral de los pueblos indígenas, ya poco o nada importa la tierra que nos cría sino qué tanta riqueza material y monetaria podemos obtener de ella, y éste es un impacto desconocido y no documentado del papel de la alfabetización en comunidades nativas con una lengua materna viva, cuando el proceso de enseñanza aprendizaje externo desconoce la cultura y los saberes propios de ese ser humano que están educando, cuando se cae en el error de imponer una serie de temas que conllevan a desconocer la identidad étnica propia, no en todos los casos pero sí en la mayoría, la historia lo ha revelado así, la historia no escrita.
+
+Los nuevos seres que le heredamos al planeta tienen uno de los desafíos más grandes en sus vidas, y es salvar lo poco que nos va quedando del medio ambiente, y éste es un compromiso fundamental de las instituciones educativas, quienes tendrán la tarea de sensibilizar y despertar el sentido de pertenencia en un contexto global cada vez más dependiente de la tecnología y la explotación desmedida de los recursos naturales.
+
+El pueblo indígena wayuu, como todas las naciones milenarias, han sobrevivido culturalmente gracias a su fuerte lazo con la naturaleza, esto nos ha mantenido en tierra, desde ella elevamos nuestra voz juntamente con organizaciones aliadas para cuidar este único planeta que nos fue dado, y “Conservación Marina Sin Fronteras” es una de ellas, es un portador de sueños que se levanta desde otros entornos y con distintos lenguajes para llevar un mensaje de protesta pero también de esperanza, una invitación solidaria con la naturaleza de la que los seres humanos solo somos una parte.
+
+Maria Josefa Epieyuu Comunidad wayuu Sanja Blanca
+
+INTRODUCCION
+A LOS MAESTROS
+
+Bienvenido al material educativo multi-lingüístico de la “Conservación Marina sin Fronteras.” Es un privilegio tenerte como parte de nuestro esfuerzo global de enseñar a niños y jóvenes cómo amar, proteger y conservar con vida su mundo marino.
+
+Este material es recomendado para estudiantes de 7º a 9º grado.
+
+Objetivo. Nuestra meta principal es enseñar sobre protección y gestión marina. Creemos que la educación se beneficiará con el aprendizaje multilingüe. Creemos que las personas con sus diversas lenguas tienen necesidades variadas. Por consiguiente, apelamos a las personas dentro de sus experiencias de lenguaje familiar y formativo en el hogar. Nuestros diversos lectores son desde ya actores interesados en la calidad, presente y futura, de nuestros recursos marinos. En ese sentido, es importante y apropiado comunicarse directamente con todos los usuarios.
+
+Como utilizar este material. Este material fue diseñado como un libro de trabajo destinado a servir como la base sobre la cual el maestro pueda construir sus clases. Siéntete en libertad de adaptarlo a tu conveniencia y tus recursos personales. Asegúrate de que cada estudiante tenga su propia copia.
+
+Cada página presenta una pequeña lección que contiene información escrita en inglés y en español. Puedes escoger enseñar la una o la otra, o ambas lenguas si así lo deseas.
+
+Empieza siempre cada sesión con un saludo positivo y alentador. Incluye un dato o hecho interesante que esté relacionado con el tema de discusión. Prepara los materiales y el pizarrón con anticipación. El pizarrón debe incluir entre otros, el nuevo vocabulario, los enlaces electrónicos, el título del tema y láminas que muestren el tema, en caso de no tener videos disponibles.
+
+“Aquellos que aman y viven junto al océano, muy difícilmente pueden formar un pensamiento en el cual el océano no forme parte de él.” Hermann Broch
+
+Gracias por descargar nuestro material educativo sobre conservación marina. Apóyanos a mejorarlo tomando unos minutos para contestar la presente encuesta. También apreciaremos que nos des tus comentarios sobre nuestro material educativo después de trabajar con el mismo. Al final de la encuesta encontrarás una cuenta de correo electrónico a la cual puedes enviarnos tus aportaciones. ¡Gracias!https://www.surveymonkey.com/r/MCWBencuestalibrodelectura
+
+LOS MANGLARES
+Conectividad y el Ambiente 1
+
+Tema: Los Manglares-Hábitat Natural 
+Objetivo: Comprensión Lectora
+Nuevo Vocabulario: Manglar, Ecosistema, Hábitat Subacuático, Ave Limícola, Dormidero
+
+Habilidades de Pensamiento Crítico
+Los manglares son ecosistemas complejos con estructuras vegetales tanto subacuáticas, como por encima de la superficie del agua. La parte superior de los manglares es un hábitat principal para las aves limícolas. Las ramas les proveen, lugares seguros para dormir y descansar después de un largo día de caza. Los manglares también son lugares para que las aves limícolas tengan bebés y cuiden a sus crías (dormidero). Sin los manglares, estas aves no tendrían un lugar para vivir.
+
+Cuestionario
+¿A qué tipo de ecosistema pertenecen los manglares?
+¿Cuál es la parte principal del hábitat de las aves limícolas?
+¿En dónde nacen y viven las aves limícolas?
+¿De qué crees que se alimentan estas aves?
+
+Actividades
+Después de discutir el cuestionario con la clase, dibuja el hábitat natural -manglares- de las aves limícolas. Muestra como estas aves dependen de este ambiente en particular para sobrevivir. Extra- Cambia el dibujo por un collage para exhibirlo en el salón de clases.
+Si vives cerca de un manglar, visítalo y presenta una descripción detallada de lo que viste.
+
+Estos playeros aliblanco o pihuiuí (Tringa semipalmata) y playeros pico corto (Limnodromus griseus) están tomando un descanso de la alimentación que realizan en los pisos fangosos que se exponen durante la marea baja. Ubicación: Punta Ratón, Choluteca, Honduras. 
+Foto: 
+
+Conectividad y el Ambiente 2
+
+Tema: Los Manglares- Combustibles Fósiles- CO2 
+Objetivo: Comprensión Lectora
+Nuevo Vocabulario: Dióxido de Carbono (CO2), Cambio Climático, Acidificación del Océano, Combustible Fósil, Energía Renovable
+
+Habilidades de Pensamiento Crítico
+Los manglares también absorben dióxido de carbono (CO2) y producen oxígeno (O2). Un problema apremiante de los tiempos modernos es el cambio climático, que está aumentando las temperaturas a nivel mundial y también está causando la acidificación del océano. Una de las principales causas del cambio climático es el aumento de CO2 en la atmósfera y los océanos. Dicho incrementoes producido por la quema de combustibles fósiles, como los derivados del petróleo y el carbón. Necesitamos reducir nuestra dependencia en los combustibles fósiles y comenzar nuestra transición hacia fuentes de energía renovables. Incluso si dejáramos de usar combustibles fósiles mañana, todavía tendríamos mucho CO2 extra en la atmósfera. El CO2 en la atmósfera captura el calor de la luz solar, mientras que en el océano hace que el agua se vuelva más ácida. Una función importante de los manglares, así como también de todas las plantas, es absorber CO2 y producir O2. Los manglares sacan el carbono (C) del aire que respiramos y lo usan como energía. Los manglares son muy eficientes en la captura de C, por lo tanto, debemos proteger los manglares.
+
+Cuestionario
+¿Cómo defines acidificación de los océanos?
+¿Cómo afecta el exceso de CO2 a los manglares y su ambiente?
+¿Cómo podemos ayudar a proteger los manglares?
+
+Actividades
+Utiliza el internet para encontrar un video de los manglares y sus alrededores naturales cerca de ti de hace 5-10 años atrás, y compáralo con el presente. Discute las diferencias con tus compañeros. Trata de enviar una carta a tus autoridades locales señalando lo que encontraste.
+
+Estos bosques de mangle cerca de Cartagena de Indias, Colombia, no sólo proveen hogares para pescadores artesanales locales, proveen también un ecosistema saludable para las criaturas marinas que estos pescadores necesitan capturar. Además, los manglares limpian el carbono del escape de muchos carros, camiones y autobuses en la ciudad. 
+De archivo: Robby Thigpen
+
+Conectividad y el Ambiente 3
+
+Tema: Los Manglares- Ecosistemas 
+Objetivo: Comprensión Lectora
+Nuevo Vocabulario: Invertebrados, Moluscos, Sustrato, Colapso
+
+Habilidades de Pensamiento Crítico:
+El sistema de raíces subacuáticas de los manglares es un ecosistema singular. Los manglares proveen protección para muchas especies de peces pequeños e, invertebrados, y un sustrato para moluscos y otros organismos. Este ecosistema es además una importante zona de cría, hábitat juvenil y área de alimentación para muchas especies de importancia económica, tales como el pargo gris (Lutjanus griseus). Cada especie comercialmente importante en el Caribe pasa por lo menos una fase de su vida en el bosque de mangle y/o en las praderas marinas. Sin los manglares y las praderas marinas, todas las pesquerías del Caribe colapsarían.
+
+Cuestionario
+Discutir que se entiende por “sistema de raíces subacuáticas”.
+¿Por qué crees que los moluscos se adhieren al sustrato?
+En tus propias palabras, explica por qué las pesquerías del Caribe colapsarían sin los manglares y las praderas marinas.
+
+Actividad
+Lleva a cabo una investigación en tu ciudad para determinar cuánta dependencia hay en el consumo de pargo gris o de alguna otra especie de marisco en particular, a nivel local. Incluye estos tópicos: disponibilidad, costo promedio, importación, exportación, calidad, restricciones y demanda del producto.
+
+Estos pargos juveniles (Lutjanus apodus) nadan entre estas raíces de mangle rojo (Rhizophora mangle) en busca de alimento. Los juveniles de L. apodus comen pequeños crustáceos como cangrejos y anfípodos que viven en las raíces. También pueden nadar rápidamente en el sistema de raíces para evitar ser comidos por peces más grandes. 
+Localización: Belice Foto: © Antonio Busiello
+
+Conectividad y el Ambiente 4
+
+Tema: Los Manglares- Erosión 
+Objetivo: Comprensión Lectora
+Nuevo Vocabulario: Erosión, Marejada Ciclónica
+
+Habilidades de Pensamiento Crítico
+Los manglares también tienen otra función: proteger a las islas y al continente de la erosión causada por huracanes y otras tormentas. Las raíces de los manglares son como otros sistemas de raíces que ayudan a mantener el suelo unido y evitar la erosión. Las tormentas causan además marejadas ciclónicas. Éstas cuando el mar es empujado sobre la tierra por la marea y la baja presión atmosférica. Los manglares ayudan a proteger las islas y el continente de estas corrientes de agua, de la erosión y de otros problemas asociados con las marejadas ciclónicas.
+
+Cuestionario
+¿Cómo crees tú que la erosión afecta a los manglares cerca de las orillas del mar?
+¿Crees que el ser humano puede ayudar a la zona costera para que no sufra erosión? ¿Cómo?
+¿Alguna vez has estado en una tormenta en la orilla del mar? ¿Qué palabras usarías para describirla?
+
+Actividad
+Haz un álbum con fotos de diferentes manglares en zonas costeras alrededor del mundo. Asegúrate de incluir la tuya. Muestra escenas del “antes y después de la tormenta.” Compáralas con fotos de 10 o más años atrás.
+
+Barbara Barrera Vilarmau y Johnny Hurtado Aguilar son los supervisores del Refugio de Vida Silvestre Laguna Urpiano en la costa caribeña de Costa Rica. La costa se ha erosionado tanto que las tortugas marinas ya no pueden poner sus huevos en esta área protegida. Durante la temporada de anidación de tortugas marinas, los conservacionistas realizan patrullajes nocturnos de tortugas marinas para proteger los huevos de los cazadores furtivos. Estas personas heroicas reubican los huevos que encuentran en áreas a salvo de los cazadores furtivos, y vigilan los huevos de las tortugas marinas hasta que eclosionan. La erosión provocada por la remoción de manglares y la erosión provocada por el aumento del nivel del mar provocado por el cambio climático, son amenazas graves para las tortugas marinas y las comunidades de todo el mundo.
+
+Barbara y Johnny miran un área de la playa donde los manglares han sido eliminados. De archivo: Robby Thigpen
+
+Conectividad y el Ambiente Actividad Exterior:
+
+(Para escuelas ubicadas cerca de la costa)
+
+Construyendo un vivero de mangle rojo
+Materiales:
+Propágulos (semillas) de mangle. Éstos pueden ser recolectados durante todo el año del árbol de mangle padre. Recolectar de 3 a 5 por alumno.
+Botellas plásticas de gaseosa de 2 litros, vacías (3 a 5 por alumno).
+Fibra de coco.
+Sustrato de tierra fangosa del manglar.
+Cubeta.
+Tijeras.
+Agua
+
+Procedimiento: 
+Elige un área en tu escuela con suficiente sombra. Con las tijeras, corta la mitad superior de las botellas de plástico. En una cubeta, mezcla la tierra fangosa con la fibra de coco en una proporción de 2:1. Llena la mitad de cada botella con la mezcla. Coloca la parte café-rojiza de cad a propágulo en la tierra de cada botella. Rotula las botellas con la fecha de la siembra y nombre del alumno. Coloca las botellas en el área con sombra previamente identificado. Riega los propágulos diariamente con agua dulce o salobre durante un periodo de 4 a 5 meses antes del trasplante. Junto con tu maestro o maestra, soliciten la colaboración de autoridades locales para identificar los mejores lugares y momento apropiado para el trasplante de los mangles. En el día y lugar indicado, coloca los propágulos en el sustrato tal como lo hiciste en las botellas de plástico, dejando una distancia aproximada de 35 cm entre cada uno.
+
+(Para escuelas que se encuentren alejadas de la costa) 
+
+Construyendo un vivero de árboles nativos 
+Materiales:
+Plántulas de árboles nativos de tu localidad (de 3 a 5 por alumno).
+Botellas plásticas de gaseosa de 2 litros, vacías (3 a 5 por alumno).
+Tierra de jardín.
+Compost (se puede elaborar a partir de residuos orgánicos del hogar).
+Tijeras.
+Agua.
+
+Procedimiento:
+Elige un área en tu escuela que reciba sol algunas horas cada día. Con las tijeras, corta la mitad superior de las botellas de plástico. En una cubeta, mezcla la tierra de jardín con el compost en una proporción de 2:1. Llena la mitad de cada botella con la mezcla. Coloca una plántula en cada botella. Rotula las botellas con la fecha de la siembra, especie del árbol y nombre del alumno. Coloca las botellas en el área previamente identificado. Riega las plántulas diariamente con agua dulce. Las plántulas estarán listas para el transplante cuando alcancen un tamaño de aproximadamente 45-50 cm. Junto con tu maestro o maestra, soliciten la colaboración de autoridades locales para identificar los mejores lugares y momento apropiado para el trasplante de los árboles.
