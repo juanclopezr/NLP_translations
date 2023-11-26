@@ -8,7 +8,7 @@ from configs import *
 checkpoint = "t5-small"
 tokenizer = AutoTokenizer.from_pretrained(checkpoint, model_max_length=MODEL_MAX_LENGTH)
 
-books = load_dataset(DATASET_NAME)
+books = load_dataset(DATASET_NAME, download_mode='force_redownload')
 
 #TODO: Find vocab_size
 VOCAB_SIZE = 63261
