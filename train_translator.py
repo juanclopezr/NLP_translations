@@ -7,13 +7,13 @@ import numpy as np
 from configs import *
 
 os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"]="1"
+os.environ["CUDA_VISIBLE_DEVICES"]="2"
 checkpoint = "t5-small"
 tokenizer = AutoTokenizer.from_pretrained(checkpoint, model_max_length=MODEL_MAX_LENGTH)
 
 books = load_dataset(DATASET_NAME)
 
-torch.cuda.set_device(1)
+torch.cuda.set_device(2)
 
 VOCAB_SIZE = 15001
 

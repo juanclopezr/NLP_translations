@@ -10,6 +10,6 @@ TRANSFER_LEARNING = False
 DATASET_NAME = 'Gaxys/wayuu_spa'
 CHECKPOINT = 't5-small'
 MODEL_MAX_LENGTH = 128
-DEVICE = "cuda:1"
+DEVICE = "cuda:2"
 SOURCE_LANG = "spa"
 TARGET_LANG = "guc"
