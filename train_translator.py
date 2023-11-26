@@ -99,8 +99,8 @@ target_lang = "fi"
 
 
 def preprocess_function(examples):
-    inputs = [example[source_lang] for example in examples["translation"]]
-    targets = [example[target_lang] for example in examples["translation"]]
+    inputs = [example[SOURCE_LANG] for example in examples["translation"]]
+    targets = [example[TARGET_LANG] for example in examples["translation"]]
     model_inputs = tokenizer(inputs, text_target=targets, max_length=128, truncation=True)
     return model_inputs
 
