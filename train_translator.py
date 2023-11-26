@@ -15,8 +15,7 @@ books = load_dataset(DATASET_NAME)
 
 torch.cuda.set_device(1)
 
-#TODO: Find vocab_size
-VOCAB_SIZE = 63261
+VOCAB_SIZE = 15001
 
 books = books["train"].train_test_split(test_size=0.2)
 
@@ -32,7 +31,7 @@ pre_trained_config = {
   "attention_dropout": 0.0,
   "bad_words_ids": [
     [
-      63260
+      15000
     ]
   ],
   "bos_token_id": 0,
