@@ -10,7 +10,7 @@ tokenizer = AutoTokenizer.from_pretrained(checkpoint, model_max_length=MODEL_MAX
 
 books = load_dataset(DATASET_NAME)
 
-torch.cuda_set_device(1)
+torch.cuda.set_device(1)
 
 #TODO: Find vocab_size
 VOCAB_SIZE = 63261
