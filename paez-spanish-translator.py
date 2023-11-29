@@ -1,0 +1,329 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[ ]:
+
+
+get_ipython().system('pip install transformers datasets evaluate sacrebleu transformers[torch] sentencepiece')
+
+
+# In[1]:
+
+
+from datasets import load_dataset
+from transformers import MarianMTModel, MarianTokenizer, MarianConfig, DataCollatorForSeq2Seq, Seq2SeqTrainingArguments, Seq2SeqTrainer,  PreTrainedTokenizerFast, AutoTokenizer
+#from tokenizers import decoders, models, normalizers, pre_tokenizers, processors, trainers, Tokenizer
+import torch
+import evaluate
+import numpy as np
+import json
+
+
+# In[2]:
+
+
+device = "cuda:0"
+
+
+# In[3]:
+
+
+HEADS = 4
+ENCODER_LAYERS = 3
+DECODER_LAYERS = 3
+HIDDEN_LAYERS = 3
+VOCAB_SIZE = 15000
+EPOCHS = 32
+BATCH_SIZE = 64
+INIT_LR = 1e-4
+BASE_MODEL = "Helsinki-NLP/opus-mt-es-fi"
+TRANSFER_LEARNING = False # Keep all other values consistent with the configurations of the model
+
+
+# In[4]:
+
+
+books = load_dataset("Gaxys/nasa_spa")
+
+books = books["train"].train_test_split(test_size=0.2)
+
+
+# In[ ]:
+
+
+dictionary = load_dataset("Gaxys/wayuu_spa_dict")
+
+dictionary = dictionary["train"].train_test_split(test_size=0.2)
+
+
+# In[5]:
+
+
+checkpoint = "t5-small"
+tokenizer = AutoTokenizer.from_pretrained(checkpoint, model_max_length=128)
+
+
+# In[6]:
+
+
+tokenizer = tokenizer.train_new_from_iterator(books['train'], VOCAB_SIZE)
+
+
+# In[7]:
+
+
+pre_trained_config = {
+  "_num_labels": 3,
+  "activation_dropout": 0.0,
+  "activation_function": "swish",
+  "add_bias_logits": False,
+  "add_final_layer_norm": False,
+  "architectures": [
+    "MarianMTModel"
+  ],
+  "attention_dropout": 0.0,
+  "bad_words_ids": [
+    [
+      VOCAB_SIZE - 1
+    ]
+  ],
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "classifier_dropout": 0.0,
+  "d_model": 512,
+  "decoder_attention_heads": 8 if TRANSFER_LEARNING else HEADS,
+  "decoder_ffn_dim": 2048,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6 if TRANSFER_LEARNING else DECODER_LAYERS,
+  "decoder_start_token_id": VOCAB_SIZE - 1,
+  "decoder_vocab_size": VOCAB_SIZE,
+  "dropout": 0.1,
+  "encoder_attention_heads": 8 if TRANSFER_LEARNING else HEADS,
+  "encoder_ffn_dim": 2048,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6 if TRANSFER_LEARNING else ENCODER_LAYERS,
+  "eos_token_id": 0,
+  "forced_eos_token_id": 0,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": True,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_length": 512,
+  "max_position_embeddings": 512,
+  "model_type": "marian",
+  "normalize_before": False,
+  "normalize_embedding": False,
+  "num_beams": 4,
+  "num_hidden_layers": 6 if TRANSFER_LEARNING else HIDDEN_LAYERS,
+  "pad_token_id": VOCAB_SIZE - 1,
+  "scale_embedding": True,
+  "share_encoder_decoder_embeddings": True,
+  "static_position_embeddings": True,
+  "transformers_version": "4.35.2",
+  "use_cache": True,
+  "vocab_size": VOCAB_SIZE
+}
+
+
+# In[8]:
+
+
+configuration = MarianConfig(**pre_trained_config)
+
+
+# In[9]:
+
+
+model = MarianMTModel(configuration)
+
+
+# In[10]:
+
+
+tuned_model = MarianMTModel.from_pretrained("Helsinki-NLP/opus-mt-es-fi")
+
+
+# In[11]:
+
+
+parts = list(dict(model.named_parameters()).keys())
+parts.remove('model.shared.weight')
+
+def transfer (tuned, to_tune, parts):
+    target = dict(to_tune.named_parameters())
+    source = dict(tuned.named_parameters())
+
+    for part in parts:
+        target[part].data.copy_(source[part].data)
+
+if TRANSFER_LEARNING:
+    transfer(tuned_model, model, parts)
+
+
+# In[12]:
+
+
+source_lang = "pbb"
+target_lang = "spa"
+
+
+def preprocess_function(examples):
+    inputs = [example[source_lang] for example in examples["translation"]]
+    targets = [example[target_lang] for example in examples["translation"]]
+    model_inputs = tokenizer(inputs, text_target=targets, max_length=128, truncation=True)
+    return model_inputs
+
+
+# In[ ]:
+
+
+tokenized_dict = dictionary.map(preprocess_function, batched=True)
+
+
+# In[13]:
+
+
+tokenized_books = books.map(preprocess_function, batched=True)
+
+
+# In[14]:
+
+
+data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model)
+
+
+# In[15]:
+
+
+metric = evaluate.load("sacrebleu")
+
+
+# In[16]:
+
+
+def postprocess_text(preds, labels):
+    preds = [pred.strip() for pred in preds]
+    labels = [[label.strip()] for label in labels]
+
+    return preds, labels
+
+
+def compute_metrics(eval_preds):
+    preds, labels = eval_preds
+    if isinstance(preds, tuple):
+        preds = preds[0]
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+
+    labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
+    decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
+
+    decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
+
+    result = metric.compute(predictions=decoded_preds, references=decoded_labels)
+    result = {"bleu": result["score"]}
+
+    prediction_lens = [np.count_nonzero(pred != tokenizer.pad_token_id) for pred in preds]
+    result["gen_len"] = np.mean(prediction_lens)
+    result = {k: round(v, 4) for k, v in result.items()}
+    return result
+
+
+# In[ ]:
+
+
+training_args = Seq2SeqTrainingArguments(
+    output_dir="transfer_with_dict_wayu_15k_1e-4",
+    evaluation_strategy="epoch",
+    learning_rate=INIT_LR,
+    per_device_train_batch_size=BATCH_SIZE,
+    per_device_eval_batch_size=BATCH_SIZE,
+    weight_decay=0.01,
+    save_total_limit=3,
+    num_train_epochs=EPOCHS,
+    predict_with_generate=True,
+    fp16=True,
+    push_to_hub=False,
+    load_best_model_at_end=True,
+    save_strategy="epoch"
+)
+
+#fast_tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+
+trainer = Seq2SeqTrainer(
+    model=model,
+    args=training_args,
+    train_dataset=tokenized_dict["train"],
+    eval_dataset=tokenized_dict["test"],
+    tokenizer=tokenizer,
+    data_collator=data_collator,
+    #compute_metrics=compute_metrics,
+)
+
+trainer.train()
+
+
+# In[17]:
+
+
+training_args = Seq2SeqTrainingArguments(
+    output_dir="non_transfer_4_head_3_layer_with_dict_nasa_15k_1e-4",
+    evaluation_strategy="epoch",
+    learning_rate=INIT_LR,
+    per_device_train_batch_size=BATCH_SIZE,
+    per_device_eval_batch_size=BATCH_SIZE,
+    weight_decay=0.01,
+    save_total_limit=3,
+    num_train_epochs=EPOCHS,
+    predict_with_generate=True,
+    fp16=True,
+    push_to_hub=False,
+    load_best_model_at_end=True,
+    save_strategy="epoch"
+)
+
+trainer = Seq2SeqTrainer(
+    model=model,
+    args=training_args,
+    train_dataset=tokenized_books["train"],
+    eval_dataset=tokenized_books["test"],
+    tokenizer=tokenizer,
+    data_collator=data_collator
+    #compute_metrics=compute_metrics,
+)
+
+trainer.train()
+
+
+# In[18]:
+
+
+eval_preds = trainer.predict(tokenized_books['test'])
+
+
+# In[19]:
+
+
+result = compute_metrics((eval_preds.predictions, eval_preds.label_ids))
+
+
+# In[ ]:
+
+
+with open("non_transfer_4_head_6_layer_with_dict_nasa_15k_1e-4.json", 'w') as f:
+    json.dump(trainer.state.log_history, f)
+
+
+# In[ ]:
+
+
+with open("non_transfer_4_head_6_layer_with_dict_nasa_15k_1e-4_result.json", 'w') as f:
+    json.dump(result, f)
+
